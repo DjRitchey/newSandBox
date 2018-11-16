@@ -47,6 +47,8 @@ GEM
     archive-zip (0.11.0)
       io-like (~> 0.3.0)
     arel (9.0.0)
+    audited (4.8.0)
+      activerecord (>= 4.0, < 5.3)
     bcrypt (3.1.12)
     bindex (0.5.0)
     bootsnap (1.3.2)
@@ -122,6 +124,7 @@ GEM
     orm_adapter (0.5.0)
     paranoia (2.4.1)
       activerecord (>= 4.0, < 5.3)
+    phonelib (0.6.27)
     public_suffix (3.0.3)
     puma (3.12.0)
     rack (2.0.6)
@@ -214,6 +217,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  audited
   bootsnap (>= 1.1.0)
   byebug
   capybara (>= 2.15)
@@ -226,6 +230,7 @@ DEPENDENCIES
   listen (>= 3.0.5, < 3.2)
   mysql2 (>= 0.4.4, < 0.6.0)
   paranoia
+  phonelib
   puma (~> 3.11)
   rails (~> 5.2.1)
   sass-rails (~> 5.0)
