@@ -4,8 +4,9 @@ class User < ApplicationRecord
 # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
 devise :database_authenticatable, :registerable,
        :recoverable, :rememberable, :validatable, :confirmable, :lockable
+       
 validates :user_name, presence: true
-validates :phone_number, phone: { possible: false }
+validates :phone_number, phone: { possible: true }
 
 
 has_many :posts
