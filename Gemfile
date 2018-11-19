@@ -9,6 +9,7 @@ gem 'chronic'
 gem 'paranoia'
 gem 'phonelib'
 gem 'audited'
+gem 'sendgrid-ruby'
 
 # styling
 gem 'jquery-rails'
