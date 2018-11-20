@@ -15,14 +15,16 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: <%= ENV['MYSQL_USERNAME'] %>
   password: <%= ENV['MYSQL_PASSWORD'] %>
-  socket: /tmp/mysql.sock
+
 
 development:
     adapter: mysql2
     encoding: utf8
-    pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+    database: test001
     username: root
     password: Piper0301!
+    host: test-001.c7lkoargxoqg.us-east-2.rds.amazonaws.com
+    port: 3306
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
