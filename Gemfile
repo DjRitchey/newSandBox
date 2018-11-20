@@ -10,6 +10,7 @@ gem 'paranoia'
 gem 'phonelib'
 gem 'audited'
 gem 'sendgrid-ruby'
+gem 'mini_racer'
 
 # styling
 gem 'jquery-rails'
